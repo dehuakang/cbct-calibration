@@ -15,7 +15,7 @@
 
 	maxBbN = 18;  
 	maxAsp = 8;
-	NUM = 21000;
+	NUM = 10000;
 
 	ftr = zeros(2 * maxBbN * maxAsp, NUM, 6, 6);
 	lbl = zeros(2, NUM);
@@ -23,9 +23,9 @@
 
 	lbl(1, :) = normrnd(200, 1, [1, NUM]);
 	lbl(2, :) = normrnd(400, 1, [1, NUM]);
-	ang(1, :) = normrnd(0, 5, [1, NUM]);
-	ang(2, :) = normrnd(0, 5, [1, NUM]);
-	ang(3, :) = normrnd(0, 5, [1, NUM]);
+	ang(1, :) = normrnd(0, 10, [1, NUM]);
+	ang(2, :) = normrnd(0, 10, [1, NUM]);
+	ang(3, :) = normrnd(0, 10, [1, NUM]);
 
 	for i = 1:6
 		bbN = 2 * i + 6;
